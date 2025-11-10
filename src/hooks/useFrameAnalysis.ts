@@ -1,6 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-const MOONDREAM_API_KEY = import.meta.env.VITE_MOONDREAM_API_KEY?.trim();
+const rawMoondreamKey =
+  (typeof __MOONDREAM_API_KEY__ === 'string' ? __MOONDREAM_API_KEY__ : '') ||
+  import.meta.env.VITE_MOONDREAM_API_KEY ||
+  '';
+const MOONDREAM_API_KEY = rawMoondreamKey.trim();
 
 export interface FrameAnalysisConfig {
   query1: string;
