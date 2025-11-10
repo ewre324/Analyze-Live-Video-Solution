@@ -1,12 +1,6 @@
 # Moondream Live Video Player
 
-This demo shows how the [Moondream](https://www.moondream.ai/) VLM can analyze live video feeds in real time, trigger alerts for specific behaviors, and present the results in a lightweight web UI built with React and Vite.
-
-## Purpose
-
-- Stream a webcam feed or local video, capture frames on the fly, and send them to Moondream for multimodal inference.
-- Pair free-form prompts with secondary trigger checks so the UI can raise notifications ("Smiling detected", "Thumbs up", etc.) when particular answers come back.
-- Showcase how to wire Moondream into a modern frontend stack with responsive overlays, local persistence for custom triggers, and graceful error handling.
+This demo shows how the [Moondream](https://moondream.ai/) VLM can analyze live video feeds in real time, trigger alerts for specific behaviors, and present the results in a lightweight web UI built with React and Vite.
 
 ## ✨ Features
 
